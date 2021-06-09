@@ -140,7 +140,7 @@ public class Response implements Closeable {
                 try {
                     closeable.close();
                 } catch (IOException ioE) {
-                    if (ioException != null) {
+                    if (ioException == null) {
                         ioException = ioE;
                     }
                 }
